@@ -1,0 +1,28 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.N2InterfaceAmfInfo",
+    "type": "object",
+    "properties": {
+        "ipv4EndpointAddress": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv4"
+            }
+        },
+        "ipv6EndpointAddress": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv6"
+            }
+        },
+        "amfName": {
+            "type": "string"
+        }
+    }
+}

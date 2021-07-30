@@ -1,0 +1,15 @@
+{
+    "description": "A map of VendorSpecificFeature objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.SupportedVendorSpecificFeatures",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "array",
+        "default": null,
+        "items": {
+            "type": "object",
+            "$ref": "../vendor-specific-feature.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.VendorSpecificFeature"
+        }
+    }
+}

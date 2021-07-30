@@ -1,0 +1,20 @@
+{
+    "description": "Defined as a part of AccessTokenClaims",
+    "javaType": "nn2.api.rest_5g.ts3gpp.Audience",
+    "type": "object",
+    "properties": {
+        "nfType": {
+            "$ref": "enums/nf-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfType"
+        },
+        "nfInstanceIdList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+            }
+        }
+    }
+}

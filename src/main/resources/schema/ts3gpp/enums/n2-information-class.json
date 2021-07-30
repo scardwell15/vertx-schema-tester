@@ -1,0 +1,14 @@
+{
+    "description": "TS29518_Namf_Communication.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.N2InformationClass",
+    "type": "string",
+    "enum": [
+        "SM",
+        "NRPPa",
+        "PWS",
+        "PWS-BCAL",
+        "PWS-RF",
+        "RAN",
+        "V2X"
+    ]
+}

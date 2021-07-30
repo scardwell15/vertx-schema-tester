@@ -1,0 +1,88 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.UpfInfo",
+    "type": "object",
+    "properties": {
+        "sNssaiUpfInfoList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai-upf-info-item.json"
+            }
+        },
+        "smfServingArea": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "interfaceUpfInfoList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "interface-upf-info-item.json"
+            }
+        },
+        "iwkEpsInd": {
+            "type": "boolean",
+            "default": false
+        },
+        "pduSessionTypes": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/pdu-session-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.PduSessionType"
+            }
+        },
+        "atsssCapability": {
+            "$ref": "atsss-capability.json"
+        },
+        "ueIpAddrInd": {
+            "type": "boolean",
+            "default": "false"
+        },
+        "taiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "tai.json"
+            }
+        },
+        "wAgfInfo": {
+            "$ref": "wagf-info.json"
+        },
+        "tngfInfo": {
+            "$ref": "tngf-info.json"
+        },
+        "twifInfo": {
+            "$ref": "twif-info.json"
+        },
+        "priority": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "redundantGtpu": {
+            "type": "boolean",
+            "default": "false"
+        },
+        "ipups": {
+            "type": "boolean",
+            "default": "false"
+        },
+        "dataForwarding": {
+            "type": "boolean",
+            "default": "false"
+        }
+    },
+    "required": [
+        "sNssaiUpfInfoList"
+    ]
+}

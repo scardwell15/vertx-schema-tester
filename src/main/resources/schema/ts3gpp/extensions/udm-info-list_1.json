@@ -1,0 +1,11 @@
+{
+    "description": "A map of UdmInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.UdmInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../udm-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.UdmInfo"
+    }
+}

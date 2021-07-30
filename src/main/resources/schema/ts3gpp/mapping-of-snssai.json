@@ -1,0 +1,16 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.MappingOfSnssai",
+    "type": "object",
+    "properties": {
+        "servingSnssai": {
+            "$ref": "snssai.json"
+        },
+        "homeSnssai": {
+            "$ref": "snssai.json"
+        }
+    },
+    "required": [
+        "servingSnssai", "homeSnssai"
+    ]
+}

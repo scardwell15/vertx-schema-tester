@@ -1,0 +1,129 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NfServiceSubscription",
+    "type": "object",
+    "properties": {
+        "serviceInstanceId": {
+            "type": "string"
+        },
+        "serviceName": {
+            "$ref": "enums/service-name.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.ServiceName"
+        },
+        "versions": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "nf-service-version.json"
+            }
+        },
+        "scheme": {
+            "$ref": "enums/uri-scheme.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.UriScheme"
+        },
+        "nfServiceStatus": {
+            "$ref": "enums/nf-service-status.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfServiceStatus"
+        },
+        "fqdn": {
+            "type": "string",
+            "formnat": "hostname"
+        },
+        "ipEndPoints": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "ip-end-point.json"
+            }
+        },
+        "apiPrefix": {
+            "type": "string"
+        },
+        "defaultNotificationSubscriptions": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "default-notification-subscription.json"
+            }
+        },
+        "allowedOperationsPerNfType": {
+            "$ref": "extensions/allowed-operations.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.AllowedOperations"
+        },
+        "allowedOperationsPerNfInstance": {
+            "$ref": "extensions/allowed-operations.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.AllowedOperations"
+        },
+        "priority": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "capacity": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "load": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "loadTimeStamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "recoveryTime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "supportedFeatures": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]*$"
+        },
+        "nfServiceSetIdList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "type": "string"
+            }
+        },
+        "sNssais": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "perPlmnSnssaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "plmn-snssai.json"
+            }
+        },
+        "vendorId": {
+            "type": "string",
+            "pattern": "^[0-9]{6}$"
+        },
+        "supportedVendorSpecificFeatures": {
+            "$ref": "extensions/supported-vendor-specific-features.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.SupportedVendorSpecificFeatures"
+        },
+        "oauth2Required": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "serviceInstanceId", 
+        "serviceName",
+        "versions",
+        "scheme",
+        "nfServiceStatus"
+    ]
+}

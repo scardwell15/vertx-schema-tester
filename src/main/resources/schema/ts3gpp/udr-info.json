@@ -1,0 +1,43 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.UdrInfo",
+    "type": "object",
+    "properties": {
+        "groupId": {
+            "type": "string"
+        },
+        "supiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "supi-range.json"
+            }
+        },
+        "gpsiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "externalGroupIdentifiersRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "supportedDataSets": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/data-set-id.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.DataSetId"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.DnnUpfInfoItem",
+    "type": "object",
+    "properties": {
+        "dnn": {
+            "type": "string"
+        },
+        "dnaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "pduSessionTypes": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/pdu-session-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.PduSessionType"
+            }
+        },
+        "ipv4AddressRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "ipv4-address-range.json"
+            }
+        },
+        "ipv6PrefixRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "ipv6-prefix-range.json"
+            }
+        }
+    },
+    "required": [
+        "dnn"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "description": "TS29521_Nbsf_Management.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.BindingLevel",
+    "type": "string",
+    "enum": [
+        "NF_SET",
+        "NF_INSTANCE"
+    ]
+}

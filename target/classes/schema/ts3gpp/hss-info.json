@@ -1,0 +1,42 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.HssInfo",
+    "type": "object",
+    "properties": {
+        "groupId": {
+            "type": "string"
+        },
+        "imsiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "imsi-range.json"
+            }
+        },
+        "imsPrivateIdentityRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "imsPublicIdentityRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "msisdnRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        }
+    }
+}

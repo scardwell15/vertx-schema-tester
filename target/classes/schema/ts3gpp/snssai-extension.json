@@ -1,0 +1,18 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SnssaiExtension",
+    "type": "object",
+    "properties": {
+        "sdRanges": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "sd-range.json"
+            }
+        },
+        "wildcardSd": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

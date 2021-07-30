@@ -1,0 +1,46 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.LmfInfo",
+    "type": "object",
+    "properties": {
+        "externalClientType": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/external-client-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.ExternalClientType"
+            }
+        },
+        "lmfId": {
+            "type": "string"
+        },
+        "servingAccessTypes": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/access-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.AccessType"
+            }
+        },
+        "servingAnNodeTypes": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/an-node-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.AnNodeType"
+            }
+        },
+        "servingRatTypes": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/rat-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.RatType"
+            }
+        }
+    }
+}

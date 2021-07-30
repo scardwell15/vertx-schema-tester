@@ -1,0 +1,11 @@
+{
+    "description": "A map of SmfInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.SmfInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../smf-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.SmfInfo"
+    }
+}

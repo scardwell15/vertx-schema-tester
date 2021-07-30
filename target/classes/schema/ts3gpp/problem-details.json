@@ -1,0 +1,52 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.ProblemDetails",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "format": "uri"
+        },
+        "title": {
+            "type": "string"
+        },
+        "status": {
+            "type": "integer"
+        },
+        "detail": {
+            "type": "string"
+        },
+        "instance": {
+            "type": "string",
+            "format": "uri"
+        },
+        "cause": {
+            "type": "string"
+        },
+        "invalidParams": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "invalid-param.json"
+            }
+        },
+        "supportedFeatures": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]*$"
+        },
+        "targetScp": {
+            "type": "string",
+            "format": "uri"
+        },
+        "accessTokenError": {
+            "$ref": "access-token-err.json"
+        },
+        "accessTokenRequest": {
+            "$ref": "access-token-req.json"
+        },
+        "nrfId": {
+            "type": "string"
+        }
+    }
+}

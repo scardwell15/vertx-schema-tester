@@ -1,0 +1,63 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AmfInfo",
+    "type": "object",
+    "properties": {
+        "amfRegionId": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{2}$"
+        },
+        "amfSetId": {
+            "type": "string",
+            "pattern": "^[0-3][A-Fa-f0-9]{2}$"
+        },
+        "guamiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "guami.json"
+            }
+        },
+        "taiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "tai.json"
+            }
+        },
+        "taiRangeList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "tai-range.json"
+            }
+        },
+        "backupInfoAmfFailure": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "guami.json"
+            }
+        },
+        "backupInfoAmfRemoval": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "guami.json"
+            }
+        },
+        "n2InterfaceAmfInfo": {
+            "$ref": "n2-interface-amf-info.json"
+        }
+    },
+    "required": [
+        "amfRegionId", 
+        "amfSetId", 
+        "guamiList"
+    ]
+}

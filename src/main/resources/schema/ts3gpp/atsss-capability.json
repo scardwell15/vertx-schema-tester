@@ -1,0 +1,19 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AtsssCapability",
+    "type": "object",
+    "properties": {
+        "atsssLL": {
+            "type": "boolean",
+            "default": false
+        },
+        "mptcp": {
+            "type": "boolean",
+            "default": false
+        },
+        "rttWithoutPmf": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

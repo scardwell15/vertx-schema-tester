@@ -1,0 +1,18 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.TacRange",
+    "type": "object",
+    "properties": {
+        "start": {
+            "type": "string",
+            "pattern": "(^[A-Fa-f0-9]{4}$)|(^[A-Fa-f0-9]{6}$)"
+        },
+        "end": {
+            "type": "string",
+            "pattern": "(^[A-Fa-f0-9]{4}$)|(^[A-Fa-f0-9]{6}$)"
+        },
+        "pattern": {
+            "type": "string"
+        }
+    }
+}

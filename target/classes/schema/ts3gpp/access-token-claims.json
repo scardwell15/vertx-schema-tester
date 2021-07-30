@@ -1,0 +1,54 @@
+{
+    "description": "TS29510_Nnrf_AccessToken.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AccessTokenClaims",
+    "type": "object",
+    "properties": {
+        "iss": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "sub": {
+            "type": "string"
+        },
+        "aud": {
+            "$ref": "audience.json"
+        },
+        "scope": {
+            "type": "string",
+            "pattern": "^([a-zA-Z0-9_:-]+)( [a-zA-Z0-9_:-]+)*$"
+        },
+        "exp": {
+            "type": "integer"
+        },
+        "consumerPlmnId": {
+            "$ref": "plmn-id.json"
+        },
+        "producerPlmnId": {
+            "$ref": "plmn-id.json"
+        },
+        "producerSnssaiList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "producerNsiList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "type": "string"
+            }
+        },
+        "producerNfSetId": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "iss", 
+        "sub", 
+        "aud", 
+        "scope", 
+        "exp"
+    ]
+}

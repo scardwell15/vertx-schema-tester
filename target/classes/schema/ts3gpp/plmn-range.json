@@ -1,0 +1,18 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PlmnRange",
+    "type": "object",
+    "properties": {
+        "start": {
+            "type": "string",
+            "pattern": "^[0-9]{3}[0-9]{2,3}$"
+        },
+        "end": {
+            "type": "string",
+            "pattern": "^[0-9]{3}[0-9]{2,3}$"
+        },
+        "pattern": {
+            "type": "string"
+        }
+    }
+}

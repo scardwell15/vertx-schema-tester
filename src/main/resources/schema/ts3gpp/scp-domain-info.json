@@ -1,0 +1,27 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.ScpDomainInfo",
+    "type": "object",
+    "properties": {
+        "scpFqdn": {
+            "type": "string",
+            "format": "hostname"
+        },
+        "scpIpEndPoints": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "$ref": "ip-end-point.json"
+            }
+        },
+        "scpPrefix": {
+            "type": "string"
+        },
+        "scpPorts": {
+            "$ref": "extensions/scp-ports.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.ScpPorts"
+        }
+    }
+}

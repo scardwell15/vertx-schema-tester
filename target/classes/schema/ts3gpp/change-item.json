@@ -1,0 +1,27 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.ChangeItem",
+    "type": "object",
+    "properties": {
+        "op": {
+            "$ref": "enums/change-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.ChangeType"
+        },
+        "path": {
+            "type": "string"
+        },
+        "from": {
+            "type": "string"
+        },
+        "origValue": {
+            "type": "string"
+        },
+        "newValue": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "op", 
+        "path"
+    ]
+}

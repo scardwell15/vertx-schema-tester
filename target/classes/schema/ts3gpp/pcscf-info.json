@@ -1,0 +1,62 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PcscfInfo",
+    "type": "object",
+    "properties": {
+        "accessType": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/access-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.AccessType"
+            }
+        },
+        "dnnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "gmFqdn": {
+            "type": "string",
+            "format": "hostname"
+        },
+        "gmIpv4Addresses": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv4"
+            }
+        },
+        "gmIpv6Addresses": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv6"
+            }
+        },
+        "servedIpv4AddressRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "ipv4-address-range.json"
+            }
+        },
+        "servedIpv6PrefixRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "ipv6-prefix-range.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,272 @@
+{
+    "description": "TS29510_Nnrf_NFDiscovery.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NfProfileDiscovery",
+    "type": "object",
+    "properties": {
+        "nfInstanceId": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "nfInstanceName": {
+            "type": "string"
+        },
+        "nfType": {
+            "$ref": "enums/nf-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfType"
+        },
+        "nfStatus": {
+            "$ref": "enums/nf-status.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfStatus"
+        },
+        "plmnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "plmn-id.json"
+            }
+        },
+        "sNssais": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "perPlmnSnssaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "plmn-snssai.json"
+            }
+        },
+        "nsiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "fqdn": {
+            "type": "string",
+            "format": "hostname"
+        },
+        "ipv4Addresses": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv4"
+            }
+        },
+        "ipv6Addresses": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv6"
+            }
+        },
+        "capacity": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "load": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "loadTimeStamp": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "locality": {
+            "type": "string"
+        },
+        "priority": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "udrInfo": {
+            "$ref": "udr-info.json"
+        },
+        "udrInfoList": {
+            "$ref": "extensions/udr-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.UdrInfoList"
+        },
+        "udmInfo": {
+            "$ref": "udm-info.json"
+        },
+        "udmInfoList": {
+            "$ref": "extensions/udm-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.UdmInfoList"
+        },
+        "ausfInfo": {
+            "$ref": "ausf-info.json"
+        },
+        "ausfInfoList": {
+            "$ref": "extensions/ausf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.AusfInfoList"
+        },
+        "amfInfo": {
+            "$ref": "amf-info.json"
+        },
+        "amfInfoList": {
+            "$ref": "extensions/amf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.AmfInfoList"
+        },
+        "smfInfo": {
+            "$ref": "smf-info.json"
+        },
+        "smfInfoList": {
+            "$ref": "extensions/smf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.SmfInfoList"
+        },
+        "upfInfo": {
+            "$ref": "upf-info.json"
+        },
+        "upfInfoList": {
+            "$ref": "extensions/upf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.UpfInfoList"
+        },
+        "pcfInfo": {
+            "$ref": "pcf-info.json"
+        },
+        "pcfInfoList": {
+            "$ref": "extensions/pcf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.PcfInfoList"
+        },
+        "bsfInfo": {
+            "$ref": "bsf-info.json"
+        },
+        "bsfInfoList": {
+            "$ref": "extensions/bsf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.BsfInfoList"
+        },
+        "chfInfo": {
+            "$ref": "chf-info.json"
+        },
+        "chfInfoList": {
+            "$ref": "extensions/chf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.ChfInfoList"
+        },
+        "udsfInfo": {
+            "$ref": "udsf-info.json"
+        },
+        "udsfInfoList": {
+            "$ref": "extensions/udsf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.UdsfInfoList"
+        },
+        "nwdafInfo": {
+            "$ref": "nwdaf-info.json"
+        },
+        "nefInfo": {
+            "$ref": "nef-info.json"
+        },
+        "pcscfInfoList": {
+            "$ref": "extensions/pcscf-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.PcscfInfoList"
+        },
+        "hssInfoList": {
+            "$ref": "extensions/hss-info-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.HssInfoList"
+        },
+        "customInfo": {
+            "$ref": "extensions/custom-info.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.CustomInfo"
+        },
+        "recoveryTime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "nfServicePersistence": {
+            "type": "boolean",
+            "default": false
+        },
+        "nfServiceList": {
+            "$ref": "extensions/nf-service-discovery-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.NfServiceDiscoveryList"
+        },
+        "defaultNotificationSubscriptions": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "default-notification-subscription.json"
+            }
+        },
+        "lmfInfo": {
+            "$ref": "lmf-info.json"
+        },
+        "gmlcInfo": {
+            "$ref": "gmlc-info.json"
+        },
+        "snpnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "plmn-id-nid.json"
+            }
+        },
+        "nfSetIdList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "servingScope": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "lcHSupportInd": {
+            "type": "boolean",
+            "default": false
+        },
+        "olcHSupportInd": {
+            "type": "boolean",
+            "default": false
+        },
+        "nfSetRecoveryTimeList": {
+            "$ref": "extensions/recovery-time-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.RecoveryTimeList"
+        },
+        "serviceSetRecoveryTimeList": {
+            "$ref": "extensions/recovery-time-list.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.extensions.RecoveryTimeList"
+        },
+        "scpDomains": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "scpInfo": {
+            "$ref": "scp-info.json"
+        }
+    },
+    "required": [
+        "nfInstanceId", 
+        "nfType", 
+        "nfStatus"
+    ],
+    "anyOf": [
+        {"required": ["fqdn"]},
+        {"required": ["ipv4Addresses"]},
+        {"required": ["ipv6Addresses"]}
+    ]
+}

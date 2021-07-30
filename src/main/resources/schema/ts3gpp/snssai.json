@@ -1,0 +1,19 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.Snssai",
+    "type": "object",
+    "properties": {
+        "sst": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+        },
+        "sd": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{6}$"
+        }
+    },
+    "required": [
+        "sst"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NefCond",
+    "type": "object",
+    "properties": {
+        "conditionType": {
+            "type": "string",
+            "enum": [
+                "NEF_COND"
+            ]
+        },
+        "eventIds": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/event-id.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.EventId"
+            }
+        },
+        "snssaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "pfdData": {
+            "$ref": "pfd-data.json"
+        },
+        "gpsiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "externalGroupIdentifiersRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "servedFqdnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "hostname"
+            }
+        }
+    },
+    "required": [
+        "conditionType"
+    ]
+}

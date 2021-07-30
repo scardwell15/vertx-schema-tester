@@ -1,0 +1,9 @@
+{
+    "description": "TS29573_N32_Handshake.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.SecurityCapability",
+    "type": "string",
+    "enum": [
+        "TLS", 
+        "PRINS"
+    ]
+}

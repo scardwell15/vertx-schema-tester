@@ -1,0 +1,21 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SliceInfoForPduSession",
+    "type": "object",
+    "properties": {
+        "sNssai": {
+            "$ref": "snssai.json"
+        },
+        "roamingIndication": {
+            "$ref": "enums/roaming-indication.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.RoamingIndication"
+        },
+        "homeSnssai": {
+            "$ref": "snssai.json"
+        }
+    },
+    "required": [
+        "sNssai", 
+        "roamingIndication"
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PcfInfo",
+    "type": "object",
+    "properties": {
+        "groupId": {
+            "type": "string"
+        },
+        "dnnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "supiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "supi-range.json"
+            }
+        },
+        "gpsiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "rxDiamHost": {
+            "type": "string",
+            "pattern": "^([A-Za-z0-9]+([-A-Za-z0-9]+)\\.)+[a-z]{2,}$"
+        },
+        "rxDiamRealm": {
+            "type": "string",
+            "pattern": "^([A-Za-z0-9]+([-A-Za-z0-9]+)\\.)+[a-z]{2,}$"
+        },
+        "v2xSupportInd": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

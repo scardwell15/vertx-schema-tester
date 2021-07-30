@@ -1,0 +1,27 @@
+{
+    "description": "TS29510_Nnrf_AccessToken.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AccessTokenRsp",
+    "type": "object",
+    "properties": {
+        "access_token": {
+            "type": "string"
+        },
+        "token_type": {
+            "type": "string",
+            "enum": [
+                "Bearer"
+            ]
+        },
+        "expires_in": {
+            "type": "integer"
+        },
+        "scope": {
+            "type": "string",
+            "pattern": "^([a-zA-Z0-9_:-]+)( [a-zA-Z0-9_:-]+)*$"
+        }
+    },
+    "required": [
+        "access_token", 
+        "token_type"
+    ]
+}

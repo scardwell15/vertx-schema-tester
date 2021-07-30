@@ -1,0 +1,11 @@
+{
+    "description": "A map of NfServiceDiscovery objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.NfServiceDiscoveryList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../nf-service-discovery.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.NfServiceDiscovery"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "description": "TS29518_Namf_Communication.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.N1MessageClass",
+    "type": "string",
+    "enum": [
+        "5GMM",
+        "SM",
+        "LPP",
+        "SMS",
+        "UPDP",
+        "LCS"
+    ]
+}

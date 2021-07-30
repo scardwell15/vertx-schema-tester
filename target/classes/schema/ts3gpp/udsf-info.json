@@ -1,0 +1,18 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.UdsfInfo",
+    "type": "object",
+    "properties": {
+        "groupId": {
+            "type": "string"
+        },
+        "supiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "supi-range.json"
+            }
+        }
+    }
+}

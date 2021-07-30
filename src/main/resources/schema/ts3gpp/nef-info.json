@@ -1,0 +1,49 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NefInfo",
+    "type": "object",
+    "properties": {
+        "nefId": {
+            "type": "string"
+        },
+        "pfdData": {
+            "$ref": "pfd-data.json"
+        },
+        "afEeData": {
+            "$ref": "af-event-exposure-data.json"
+        },
+        "gpsiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "gpsiRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "externalGroupIdentifiersRanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "servedFqdnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "hostname"
+            }
+        }
+    }
+}

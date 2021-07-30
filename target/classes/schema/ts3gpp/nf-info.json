@@ -1,0 +1,11 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NfInfo",
+    "type": "object",
+    "properties": {
+        "nfType": {
+            "$ref": "enums/nf-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfType"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SliceInfoForRegistration",
+    "type": "object",
+    "properties": {
+        "subscribedNssai": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "subscribed-snssai.json"
+            }
+        },
+        "allowedNssaiCurrentAccess": {
+            "$ref": "allowed-nssai.json"
+        },
+        "allowedNssaiOtherAccess": {
+            "$ref": "allowed-nssai.json"
+        },
+        "sNssaiForMapping": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "requestedNssai": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "defaultConfiguredSnssaiInd": {
+            "type": "boolean"
+        },
+        "mappingOfNssai": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "mapping-of-snssai.json"
+            }
+        },
+        "requestMapping": {
+            "type": "boolean"
+        }
+    }
+}

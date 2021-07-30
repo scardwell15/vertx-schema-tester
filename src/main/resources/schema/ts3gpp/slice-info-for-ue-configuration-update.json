@@ -1,0 +1,40 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SliceInfoForUeConfigurationUpdate",
+    "type": "object",
+    "properties": {
+        "subscribedNssai": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "subscribed-snssai.json"
+            }
+        },
+        "allowedNssaiCurrentAccess": {
+            "$ref": "allowed-nssai.json"
+        },
+        "allowedNssaiOtherAccess": {
+            "$ref": "allowed-nssai.json"
+        },
+        "defaultConfiguredSnssaiInd": {
+            "type": "boolean"
+        },
+        "requestedNssai": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "mappingOfNssai": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "mapping-of-snssai.json"
+            }
+        }
+    }
+}

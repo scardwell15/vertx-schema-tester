@@ -1,0 +1,12 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.PduSessionType",
+    "type": "string",
+    "enum": [
+        "IPV4",
+        "IPV6",
+        "IPV4V6",
+        "UNSTRUCTURED",
+        "ETHERNET"
+    ]
+}

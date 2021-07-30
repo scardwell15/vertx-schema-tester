@@ -1,0 +1,20 @@
+{
+    "description": "not defined by any 3gpp yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PatchData",
+    "type": "object",
+    "properties": {
+        "op": {
+            "$ref": "enums/patch-operation.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.PatchOperation"
+        },
+        "path": {
+            "type": "string"
+        },
+        "value": {
+           
+        }
+    },
+    "required": [
+        "op", "path"
+    ]
+}

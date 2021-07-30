@@ -1,0 +1,24 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NetworkSliceCond",
+    "type": "object",
+    "properties": {
+        "snssaiList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "nsiList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "snssaiList"
+    ]
+}

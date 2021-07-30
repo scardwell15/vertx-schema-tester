@@ -1,0 +1,19 @@
+{
+    "description": "TS29521_Nbsf_Management.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.BindingResp",
+    "type": "object",
+    "properties": {
+        "pcfSmFqdn": {
+            "type": "string",
+            "format": "hostname"
+        },
+        "pcfSmIpEndPoints": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "ip-end-point.json"
+            }
+        }
+    }
+}

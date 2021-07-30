@@ -1,0 +1,23 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AllowedNssai",
+    "type": "object",
+    "properties": {
+        "allowedSnssaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "allowed-snssai.json"
+            }
+        },
+        "accessType": {
+            "$ref": "enums/access-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.AccessType"
+        }
+    },
+    "required": [
+        "allowedSnssaiList", 
+        "accessType"
+    ]
+}

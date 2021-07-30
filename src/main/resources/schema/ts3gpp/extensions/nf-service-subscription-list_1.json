@@ -1,0 +1,11 @@
+{
+    "description": "A map of NfServiceSubscription objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.NfServiceSubscriptionList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../nf-service-subscription.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.NfServiceSubscription"
+    }
+}

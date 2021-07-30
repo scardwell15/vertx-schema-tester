@@ -1,0 +1,22 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SnssaiSmfInfoItem",
+    "type": "object",
+    "properties": {
+        "sNssai": {
+            "$ref": "snssai.json"
+        },
+        "dnnSmfInfoList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "dnn-smf-info-item.json"
+            }
+        }
+    },
+    "required": [
+        "sNssai", 
+        "dnnSmfInfoList"
+    ]
+}

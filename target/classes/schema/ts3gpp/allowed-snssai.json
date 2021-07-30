@@ -1,0 +1,24 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AllowedSnssai",
+    "type": "object",
+    "properties": {
+        "allowedSnssai": {
+            "$ref": "snssai.json"
+        },
+        "nsiInformationList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "nsi-information.json"
+            }
+        },
+        "mappedHomeSnssai": {
+            "$ref": "snssai.json"
+        }
+    },
+    "required": [
+        "allowedSnssai"
+    ]
+}

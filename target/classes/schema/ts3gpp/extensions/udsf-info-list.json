@@ -1,0 +1,11 @@
+{
+    "description": "A map of UdsfInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.UdsfInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../udsf-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.UdsfInfo"
+    }
+}

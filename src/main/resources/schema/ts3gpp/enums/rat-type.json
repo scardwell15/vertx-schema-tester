@@ -1,0 +1,22 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.RatType",
+    "type": "string",
+    "enum": [
+        "NR",
+        "EUTRA",
+        "WLAN",
+        "VIRTUAL",
+        "NBIOT",
+        "WIRELINE",
+        "WIRELINE_CABLE",
+        "WIRELINE_BBF",
+        "LTE-M",
+        "NR_U",
+        "EUTRA_U",
+        "TRUSTED_N3GA",
+        "TRUSTED_WLAN",
+        "UTRA",
+        "GERA"
+    ]
+}

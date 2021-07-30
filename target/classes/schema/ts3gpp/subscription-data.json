@@ -1,0 +1,112 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SubscriptionData",
+    "type": "object",
+    "properties": {
+        "nfStatusNotificationUri": {
+            "type": "string"
+        },
+        "reqNfInstanceId": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "subscrCond": {
+            "oneOf": [
+                {"$ref": "nf-instance-id-cond.json"},
+                {"$ref": "nf-instance-id-list-cond.json"},
+                {"$ref": "nf-type-cond.json"},
+                {"$ref": "service-name-cond.json"},
+                {"$ref": "amf-cond.json"},
+                {"$ref": "guami-list-cond.json"},
+                {"$ref": "network-slice-cond.json"},
+                {"$ref": "nf-group-cond.json"},
+                {"$ref": "nf-set-cond.json"},
+                {"$ref": "nf-service-set-cond.json"},
+                {"$ref": "upf-cond.json"},
+                {"$ref": "scp-domain-cond.json"},
+                {"$ref": "nwdaf-cond.json"},
+                {"$ref": "nef-cond.json"}
+            ]
+        },
+        "subscriptionId": {
+            "type": "string",
+            "pattern": "^([0-9]{5,6}-)?[^-]+$"
+        },
+        "validityTime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "reqNotifEvents": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "enums/notification-event-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NotificationEventType"
+            }
+        },
+        "plmnId": {
+            "$ref": "plmn-id.json"
+        },
+        "nid": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{11}$"
+        },
+        "notifCondition": {
+            "$ref": "notif-condition.json"
+        },
+        "reqNfType": {
+            "$ref": "enums/nf-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfType"
+        },
+        "reqNfFqdn": {
+            "type": "string",
+            "format": "hostname"
+        },
+        "reqSnssais": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "reqPerPlmnSnssais": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "plmn-snssai.json"
+            }
+        },
+        "reqPlmnList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "plmn-id.json"
+            }
+        },
+        "reqSnpnList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "plmn-id-nid.json"
+            }
+        },
+        "servingScope": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "type": "string"
+            }
+        },
+        "requesterFeatures": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]*$"
+        },
+        "nrfSupportedFeatures": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]*$"
+        }
+    },
+    "required": [
+        "nfStatusNotificationUri"
+    ]
+}

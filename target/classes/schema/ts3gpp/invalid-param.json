@@ -1,0 +1,16 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.InvalidParam",
+    "type": "object",
+    "properties": {
+        "param": {
+            "type": "string"
+        },
+        "reason": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "param"
+    ]
+}

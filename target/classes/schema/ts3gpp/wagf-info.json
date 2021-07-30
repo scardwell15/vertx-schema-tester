@@ -1,0 +1,29 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.WagfInfo",
+    "type": "object",
+    "properties": {
+        "ipv4EndpointAddresses": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv4"
+            }
+        },
+        "ipv6EndpointAddresses": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "format": "ipv6"
+            }
+        },
+        "endpointFqdn": {
+            "type": "string",
+            "formnat": "hostname"
+        }
+    }
+}

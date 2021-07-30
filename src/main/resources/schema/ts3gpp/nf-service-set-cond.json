@@ -1,0 +1,13 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NfServiceSetCond",
+    "type": "object",
+    "properties": {
+        "nfServiceSetId": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "nfServiceSetId"
+    ]
+}

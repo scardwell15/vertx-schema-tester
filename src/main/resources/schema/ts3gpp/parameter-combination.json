@@ -1,0 +1,17 @@
+{
+    "description": "TS29521_Nbsf_Management.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.ParameterCombination",
+    "type": "object",
+    "properties": {
+        "supi": {
+            "type": "string",
+            "pattern": "^(imsi-[0-9]{5,15}|nai-.+|gci-.+|gli-.+|.+)$"
+        },
+        "dnn": {
+            "type": "string"
+        },
+        "snssai": {
+            "$ref": "snssai.json"
+        }
+    }
+}

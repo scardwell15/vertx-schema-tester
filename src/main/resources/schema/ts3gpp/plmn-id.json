@@ -1,0 +1,19 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PlmnId",
+    "type": "object",
+    "properties": {
+        "mcc": {
+            "type": "string",
+            "pattern": "^\\d{3}$"
+        },
+        "mnc": {
+            "type": "string",
+            "pattern": "^\\d{2,3}$"
+        }
+    },
+    "required": [
+        "mcc", 
+        "mnc"
+    ]
+}

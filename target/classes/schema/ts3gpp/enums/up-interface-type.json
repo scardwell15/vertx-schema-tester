@@ -1,0 +1,11 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.UpInterfaceType",
+    "type": "string",
+    "enum": [
+        "N3",
+        "N6",
+        "N9",
+        "DATA_FORWARDING"
+    ]
+}

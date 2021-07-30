@@ -1,0 +1,26 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PlmnSnssai",
+    "type": "object",
+    "properties": {
+        "plmnId": {
+            "$ref": "plmn-id.json"
+        },
+        "sNssaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "nid": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{11}$"
+        }
+    },
+    "required": [
+        "plmnId", 
+        "sNssaiList"
+    ]
+}

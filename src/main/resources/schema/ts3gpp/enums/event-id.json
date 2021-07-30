@@ -1,0 +1,17 @@
+{
+    "description": "TS29520_Nnwdaf_AnalyticsInfo.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.EventId",
+    "type": "string",
+    "enum": [
+        "LOAD_LEVEL_INFORMATION",
+        "NETWORK_PERFORMANCE",
+        "NF_LOAD",
+        "SERVICE_EXPERIENCE",
+        "UE_MOBILITY",
+        "UE_COMMUNICATION",
+        "QOS_SUSTAINABILITY",
+        "ABNORMAL_BEHAVIOUR",
+        "USER_DATA_CONGESTION",
+        "NSI_LOAD_LEVEL"
+    ]
+}

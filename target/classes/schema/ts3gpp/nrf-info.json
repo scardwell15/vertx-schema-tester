@@ -1,0 +1,279 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NrfInfo",
+    "type": "object",
+    "properties": {
+        "servedUdrInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "udr-info.json"
+            }
+        },
+        "servedUdrInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "udr-info.json"
+                }
+            }
+        },
+        "servedUdmInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "udm-info.json"
+            }
+        },
+        "servedUdmInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "udm-info.json"
+                }
+            }
+        },
+        "servedAusfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "ausf-info.json"
+            }
+        },
+        "servedAusfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "ausf-info.json"
+                }
+            }
+        },
+        "servedAmfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "amf-info.json"
+            }
+        },
+        "servedAmfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "amf-info.json"
+                }
+            }
+        },
+        "servedSmfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "smf-info.json"
+            }
+        },
+        "servedSmfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "smf-info.json"
+                }
+            }
+        },
+        "servedUpfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "upf-info.json"
+            }
+        },
+        "servedUpfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "upf-info.json"
+                }
+            }
+        },
+        "servedPcfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "pcf-info.json"
+            }
+        },
+        "servedPcfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "pcf-info.json"
+                }
+            }
+        },
+        "servedBsfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "bsf-info.json"
+            }
+        },
+        "servedBsfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "bsf-info.json"
+                }
+            }
+        },
+        "servedChfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "chf-info.json"
+            }
+        },
+        "servedChfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "chf-info.json"
+                }
+            }
+        },
+        "servedNefInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "nef-info.json"
+            }
+        },
+        "servedNwdafInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "nwdaf-info.json"
+            }
+        },
+        "servedPcscfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "pcscf-info.json"
+                }
+            }
+        },
+        "servedGmlcInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "gmlc-info.json"
+            }
+        },
+        "servedLmfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "lmf-info.json"
+            }
+        },
+        "servedNfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "nf-info.json"
+            }
+        },
+        "servedHssInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "hss-info.json"
+                }
+            }
+        },
+        "servedUdsfInfo": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "udsf-info.json"
+            }
+        },
+        "servedUdsfInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                    "type": "object",
+                    "$ref": "udsf-info.json"
+                }
+            }
+        },
+        "servedScpInfoList": {
+            "type": "object",
+            "minProperties": 1,
+            "additionalProperties": {
+                "type": "object",
+                "$ref": "scp-info.json"
+            }
+        }
+    }
+}

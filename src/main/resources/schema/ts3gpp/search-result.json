@@ -1,0 +1,33 @@
+{
+    "description": "TS29510_Nnrf_NFDiscovery.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SearchResult",
+    "type": "object",
+    "properties": {
+        "validityPeriod": {
+            "type": "integer"
+        },
+        "nfInstances": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "nf-profile-discovery.json"
+            }
+        },
+        "searchId": {
+            "type": "string"
+        },
+        "numNfInstComplete": {
+            "type": "integer"
+        },
+        "preferredSearch": {
+            "$ref": "preferred-search.json"
+        },
+        "nrfSupportedFeatures": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]*$"
+        }
+    },
+    "required": [
+        "nfInstances"
+    ]
+}

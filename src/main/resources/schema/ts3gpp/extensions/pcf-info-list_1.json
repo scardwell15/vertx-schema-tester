@@ -1,0 +1,11 @@
+{
+    "description": "A map of PcfInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.PcfInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../pcf-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.PcfInfo"
+    }
+}

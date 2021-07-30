@@ -1,0 +1,22 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.Tai",
+    "type": "object",
+    "properties": {
+        "plmnId": {
+            "$ref": "plmn-id.json"
+        },
+        "tac": {
+            "type": "string",
+            "pattern": "(^[A-Fa-f0-9]{4}$)|(^[A-Fa-f0-9]{6}$)"
+        },
+        "nid": {
+            "type": "string",
+            "pattern": "^[A-Fa-f0-9]{11}$"
+        }
+    },
+    "required": [
+        "plmnId", 
+        "tac"
+    ]
+}

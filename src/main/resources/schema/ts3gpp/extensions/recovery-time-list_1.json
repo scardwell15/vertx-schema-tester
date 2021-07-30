@@ -1,0 +1,10 @@
+{
+    "description": "A map of recovery date times",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.RecoveryTimeList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "string",
+        "format": "date-time"
+    }
+}

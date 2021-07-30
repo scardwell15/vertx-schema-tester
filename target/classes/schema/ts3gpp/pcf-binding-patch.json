@@ -1,0 +1,84 @@
+{
+    "description": "TS29521_Nbsf_Management.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PcfBindingPatch",
+    "type": "object",
+    "properties": {
+        "ipv4Addr": {
+            "type": "string",
+            "format": "ipv4",
+            "nullable": true
+        },
+        "ipDomain": {
+            "type": "string",
+            "nullable": true
+        },
+        "ipv6Prefix": {
+            "type": "string",
+            "nullable": true,
+            "allOf": [
+                {
+                    "pattern": "^((:|(0?|([1-9a-f][0-9a-f]{0,3}))):)((0?|([1-9a-f][0-9a-f]{0,3})):){0,6}(:|(0?|([1-9a-f][0-9a-f]{0,3})))(\/(([0-9])|([0-9]{2})|(1[0-1][0-9])|(12[0-8])))$"
+                },
+                {
+                    "pattern": "^((([^:]+:){7}([^:]+))|((([^:]+:)*[^:]+)?::(([^:]+:)*[^:]+)?))(\/.+)$"
+                }
+            ]
+        },
+        "addIpv6Prefixes": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "nullable": true,
+            "items": {
+                "type": "string",
+                "allOf": [
+                    {
+                        "pattern": "^((:|(0?|([1-9a-f][0-9a-f]{0,3}))):)((0?|([1-9a-f][0-9a-f]{0,3})):){0,6}(:|(0?|([1-9a-f][0-9a-f]{0,3})))(\/(([0-9])|([0-9]{2})|(1[0-1][0-9])|(12[0-8])))$"
+                    },
+                    {
+                        "pattern": "^((([^:]+:){7}([^:]+))|((([^:]+:)*[^:]+)?::(([^:]+:)*[^:]+)?))(\/.+)$"
+                    }
+                ]
+            }
+        },
+        "macAddr48": {
+            "type": "string",
+            "nullable": true,
+            "pattern": "^([0-9a-fA-F]{2})((-[0-9a-fA-F]{2}){5})$"
+        },
+        "addMacAddrs": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "nullable": true,
+            "items": {
+                "type": "string",
+                "pattern": "^([0-9a-fA-F]{2})((-[0-9a-fA-F]{2}){5})$"
+            }
+        },
+        "pcfId": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "pcfFqdn": {
+            "type": "string",
+            "format": "hostname"
+        },
+        "pcfIpEndPoints": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "ip-end-point.json"
+            }
+        },
+        "pcfDiamHost": {
+            "type": "string",
+            "pattern": "^([A-Za-z0-9]+([-A-Za-z0-9]+)\\.)+[a-z]{2,}$"
+        },
+        "pcfDiamRealm": {
+            "type": "string",
+            "pattern": "^([A-Za-z0-9]+([-A-Za-z0-9]+)\\.)+[a-z]{2,}$"
+        }
+    }
+}

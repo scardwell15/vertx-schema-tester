@@ -1,0 +1,30 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.UpfCond",
+    "type": "object",
+    "properties": {
+        "conditionType": {
+            "type": "string",
+            "enum": [
+                "UPF_COND"
+            ]
+        },
+        "smfServingArea": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "type": "string"
+            }
+        },
+        "taiList": {
+            "type": "array",
+            "default": null,
+            "items": {
+                "$ref": "tai.json"
+            }
+        }
+    },
+    "required": [
+        "conditionType"
+    ]
+}

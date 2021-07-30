@@ -1,0 +1,11 @@
+{
+    "description": "A map of AmfInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.AmfInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../amf-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.AmfInfo"
+    }
+}

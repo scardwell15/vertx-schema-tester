@@ -1,0 +1,29 @@
+{
+    "description": "TS29510_Nnrf_NFDiscovery.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.PreferredSearch",
+    "type": "object",
+    "properties": {
+        "preferredTaiMatchInd": {
+            "type": "boolean",
+            "default": false
+        },
+        "preferredFullPlmnMatchInd": {
+            "type": "boolean",
+            "default": false
+        },
+        "preferredApiVersionsMatchInd": {
+            "type": "boolean"
+        },
+        "otherApiVersionsInd": {
+            "type": "boolean"
+        },
+        "preferredLocalityMatchInd": {
+            "type": "boolean",
+            "default": false
+        },
+        "otherLocalityInd": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

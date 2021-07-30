@@ -1,0 +1,16 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SubscribedSnssai",
+    "type": "object",
+    "properties": {
+        "subscribedSnssai": {
+            "$ref": "snssai.json"
+        },
+        "defaultIndication": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "subscribedSnssai"
+    ]
+}

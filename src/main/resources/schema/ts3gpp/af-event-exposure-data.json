@@ -1,0 +1,35 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AfEventExposureData",
+    "type": "object",
+    "properties": {
+        "afEvents": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/af-event.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.AfEvent"
+            }
+        },
+        "afId": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "appIds": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "afEvents"
+    ]
+}

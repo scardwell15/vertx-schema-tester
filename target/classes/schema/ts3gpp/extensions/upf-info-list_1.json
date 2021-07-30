@@ -1,0 +1,11 @@
+{
+    "description": "A map of UpfInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.UpfInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../upf-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.UpfInfo"
+    }
+}

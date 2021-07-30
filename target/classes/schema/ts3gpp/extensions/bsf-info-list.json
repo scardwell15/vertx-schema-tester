@@ -1,0 +1,11 @@
+{
+    "description": "A map of BsfInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.BsfInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../bsf-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.BsfInfo"
+    }
+}

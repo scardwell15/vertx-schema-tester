@@ -1,0 +1,46 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.ChfInfo",
+    "type": "object",
+    "properties": {
+        "supiRangeList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "supi-range.json"
+            }
+        },
+        "gpsiRangeList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "identity-range.json"
+            }
+        },
+        "plmnRangeList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "plmn-range.json"
+            }
+        },
+        "groupId": {
+            "type": "string"
+        },
+        "primaryChfInstance": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "secondaryChfInstance": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        }
+    },
+    "required": [
+        "primaryChfInstance",
+        "secondaryChfInstance"
+    ]
+}

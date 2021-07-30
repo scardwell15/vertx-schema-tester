@@ -1,0 +1,11 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.ChangeType",
+    "type": "string",
+    "enum": [
+        "ADD", 
+        "MOVE", 
+        "REMOVE", 
+        "REPLACE"
+    ]
+}

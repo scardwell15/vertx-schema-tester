@@ -1,0 +1,41 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NwdafInfo",
+    "type": "object",
+    "properties": {
+        "eventIds": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/event-id.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.EventId"
+            }
+        },
+        "nwdafEvents": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/nwdaf-event.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NwdafEvent"
+            }
+        },
+        "taiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "tai.json"
+            }
+        },
+        "taiRangeList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "tai-range.json"
+            }
+        }
+    }
+}

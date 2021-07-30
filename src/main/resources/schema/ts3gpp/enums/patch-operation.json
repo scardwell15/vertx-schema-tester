@@ -1,0 +1,10 @@
+{
+    "description": "not defined by any 3gpp yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.PatchOperation",
+    "type": "string",
+    "enum": [
+        "add", 
+        "remove",
+        "replace"
+    ]
+}

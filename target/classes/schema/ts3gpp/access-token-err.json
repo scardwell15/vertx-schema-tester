@@ -1,0 +1,27 @@
+{
+    "description": "TS29510_Nnrf_AccessToken.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AccessTokenErr",
+    "type": "object",
+    "properties": {
+        "error": {
+            "type": "string",
+            "enum": [
+                "invalid_request",
+                "invalid_client",
+                "invalid_grant",
+                "unauthorized_client",
+                "unsupported_grant_type",
+                "invalid_scope"
+            ]
+        },
+        "error_description": {
+            "type": "string"
+        },
+        "error_uri": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "error"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.NotificationType",
+    "type": "string",
+    "enum": [
+        "N1_MESSAGES",
+        "N2_INFORMATION",
+        "LOCATION_NOTIFICATION",
+        "DATA_REMOVAL_NOTIFICATION",
+        "DATA_CHANGE_NOTIFICATION",
+        "LOCATION_UPDATE_NOTIFICATION",
+        "NSSAA_REAUTH_NOTIFICATION",
+        "NSSAA_REVOC_NOTIFICATION"
+    ]
+}

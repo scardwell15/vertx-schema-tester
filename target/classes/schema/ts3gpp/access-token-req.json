@@ -1,0 +1,94 @@
+{
+    "description": "TS29510_Nnrf_AccessToken.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.AccessTokenReq",
+    "type": "object",
+    "properties": {
+        "grant_type": {
+            "type": "string",
+            "enum": [
+                "client_credentials"
+            ]
+        },
+        "nfInstanceId": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "nfType": {
+            "$ref": "enums/nf-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfType"
+        },
+        "targetNfType": {
+            "$ref": "enums/nf-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NfType"
+        },
+        "scope": {
+            "type": "string",
+            "pattern": "^([a-zA-Z0-9_:-]+)( [a-zA-Z0-9_:-]+)*$"
+        },
+        "targetNfInstanceId": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+        },
+        "requesterPlmn": {
+            "$ref": "plmn-id.json"
+        },
+        "requesterPlmnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 2,
+            "items": {
+                "$ref": "plmn-id.json"
+            }
+        },
+        "requesterSnssaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "requesterFqdn": {
+            "type": "string",
+            "formnat": "hostname"
+        },
+        "requesterSnpnList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "plmn-id-nid.json"
+            }
+        },
+        "targetPlmn": {
+            "$ref": "plmn-id.json"
+        },
+        "targetSnssaiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai.json"
+            }
+        },
+        "targetNsiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "targetNfSetId": {
+            "type": "string"
+        },
+        "targetNfServiceSetId": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "grant_type",
+        "nfInstanceId",
+        "scope"
+    ]
+}

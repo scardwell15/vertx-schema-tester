@@ -1,0 +1,56 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SmfInfo",
+    "type": "object",
+    "properties": {
+        "sNssaiSmfInfoList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "snssai-smf-info-item.json"
+            }
+        },
+        "taiList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "tai.json"
+            }
+        },
+        "taiRangeList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "tai-range.json"
+            }
+        },
+        "pgwFqdn": {
+            "type": "string",
+            "formant": "hostname"
+        },
+        "accessType": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/access-type.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.AccessType"
+            }
+        },
+        "priority": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "vsmfSupportInd": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "sNssaiSmfInfoList"
+    ]
+}

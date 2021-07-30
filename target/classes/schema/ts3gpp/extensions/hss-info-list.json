@@ -1,0 +1,11 @@
+{
+    "description": "A map of HssInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.HssInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../hss-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.HssInfo"
+    }
+}

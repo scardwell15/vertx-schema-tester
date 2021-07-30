@@ -1,0 +1,36 @@
+{
+    "description": "TS29573_N32_Handshake.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.SecNegotiateReqData",
+    "type": "object",
+    "properties": {
+        "sender": {
+            "type": "string",
+            "format": "hostname"
+        },
+        "supportedSecCapabilityList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "enums/security-capability.json",
+                "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.SecurityCapability"
+            }
+        },
+        "3GppSbiTargetApiRootSupported": {
+            "type": "boolean",
+            "default": false
+        },
+        "plmnIdList": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "plmn-id.json"
+            }
+        }
+    },
+    "required": [
+        "sender", 
+        "supportedSecCapabilityList"
+    ]
+}

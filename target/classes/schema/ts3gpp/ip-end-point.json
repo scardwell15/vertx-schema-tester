@@ -1,0 +1,24 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.IpEndPoint",
+    "type": "object",
+    "properties": {
+        "ipv4Address": {
+            "type": "string",
+            "format": "ipv4"
+        },
+        "ipv6Address": {
+            "type": "string",
+            "format": "ipv6"
+        },
+        "transport": {
+            "$ref": "enums/transport-protocol.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.TransportProtocol"
+        },
+        "port": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 65535
+        }
+    }
+}

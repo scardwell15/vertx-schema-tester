@@ -1,0 +1,25 @@
+{
+    "description": "TS29531_Nnssf_NSSelection.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NsiInformation",
+    "type": "object",
+    "properties": {
+        "nrfId": {
+            "type": "string",
+            "format": "uri"
+        },
+        "nsiId": {
+            "type": "string"
+        },
+        "nrfNfMgtUri": {
+            "type": "string",
+            "format": "uri"
+        },
+        "nrfAccessTokenUri": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "required": [
+        "nrfId"
+    ]
+}

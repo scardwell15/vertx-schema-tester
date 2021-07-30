@@ -1,0 +1,9 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.AccessType",
+    "type": "string",
+    "enum": [
+        "3GPP_ACCESS", 
+        "NON_3GPP_ACCESS"
+    ]
+}

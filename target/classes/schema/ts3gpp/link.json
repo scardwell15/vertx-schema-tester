@@ -1,0 +1,14 @@
+{
+    "description": "TS29571_CommonData.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.Link",
+    "type": "object",
+    "properties": {
+        "href": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "required": [
+        "href"
+    ]
+}

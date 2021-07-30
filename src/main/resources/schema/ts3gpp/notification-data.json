@@ -1,0 +1,79 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.NotificationData",
+    "type": "object",
+    "properties": {
+        "event": {
+            "$ref": "enums/notification-event-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NotificationEventType"
+        },
+        "nfInstanceUri": {
+            "type": "string",
+            "format": "uri"
+        },
+        "nfProfile": {
+            "$ref": "nf-profile-subscription.json"
+        },
+        "profileChanges": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "$ref": "change-item.json"
+            }
+        },
+        "conditionEvent": {
+            "$ref": "enums/condition-event-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.ConditionEventType"
+        }
+    },
+    "required": [
+        "event", 
+        "nfInstanceUri"
+    ],
+    "allOf": [
+        {
+            "anyOf": [
+                {
+                    "not": {
+                        "properties": {
+                            "event": {
+                                "type": "string",
+                                "enum": [
+                                    "NF_PROFILE_CHANGED"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "oneOf": [
+                      	{"required":["nfProfile"]}, 
+                      	{"required":["profileChanges"]}
+                    ]
+                }
+            ]
+        },
+        {
+            "anyOf": [
+                {
+                    "not": {
+                        "properties": {
+                            "event": {
+                                "type": "string",
+                                "enum": [
+                                    "NF_REGISTERED"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "required": [
+                        "nfProfile"
+                    ]
+                }
+            ]
+        }
+    ]
+}

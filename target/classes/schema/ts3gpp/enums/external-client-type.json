@@ -1,0 +1,15 @@
+{
+    "description": "TS29572_Nlmf_Location.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.enums.ExternalClientType",
+    "type": "string",
+    "enum": [
+        "EMERGENCY_SERVICES",
+        "VALUE_ADDED_SERVICES",
+        "PLMN_OPERATOR_SERVICES",
+        "LAWFUL_INTERCEPT_SERVICES",
+        "PLMN_OPERATOR_BROADCAST_SERVICES",
+        "PLMN_OPERATOR_OM",
+        "PLMN_OPERATOR_ANONYMOUS_STATISTICS",
+        "PLMN_OPERATOR_TARGET_MS_SERVICE_SUPPORT"
+    ]
+}

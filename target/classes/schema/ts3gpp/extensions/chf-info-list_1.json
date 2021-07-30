@@ -1,0 +1,11 @@
+{
+    "description": "A map of ChfInfo objects",
+    "javaType": "nn2.api.rest_5g.ts3gpp.extensions.ChfInfoList",
+    "type": "object",
+    "minProperties": 1,
+    "additionalProperties": {
+        "type": "object",
+        "$ref": "../chf-info.json",
+        "existingJavaType": "nn2.api.rest_5g.ts3gpp.ChfInfo"
+    }
+}

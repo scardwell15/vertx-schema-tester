@@ -1,0 +1,8 @@
+com/mycompany/vertxschematester/Ts3gppValidators.class
+com/mycompany/vertxschematester/Constants.class
+com/mycompany/vertxschematester/Validator.class
+com/mycompany/vertxschematester/JsonValidationException.class
+com/mycompany/vertxschematester/ExtensionsValidators.class
+com/mycompany/vertxschematester/JsonValidator.class
+com/mycompany/vertxschematester/JsonValidationUtils.class
+com/mycompany/vertxschematester/JsonValidatorImpl.class

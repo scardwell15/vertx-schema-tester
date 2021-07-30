@@ -1,0 +1,38 @@
+{
+    "description": "TS29510_Nnrf_NFManagement.yaml",
+    "javaType": "nn2.api.rest_5g.ts3gpp.DefaultNotificationSubscription",
+    "type": "object",
+    "properties": {
+        "notificationType": {
+            "$ref": "enums/notification-type.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.NotificationType"
+        },
+        "callbackUri": {
+            "type": "string",
+            "format": "uri"
+        },
+        "n1MessageClass": {
+            "$ref": "enums/n1-message-class.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.N1MessageClass"
+        },
+        "n2InformationClass": {
+            "$ref": "enums/n2-information-class.json",
+            "existingJavaType": "nn2.api.rest_5g.ts3gpp.enums.N2InformationClass"
+        },
+        "versions": {
+            "type": "array",
+            "default": null,
+            "minItems": 1,
+            "items": {
+                "type": "string"
+            }
+        },
+        "binding": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "notificationType", 
+        "callbackUri"
+    ]
+}

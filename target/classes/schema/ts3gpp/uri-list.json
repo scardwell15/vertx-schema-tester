@@ -1,0 +1,26 @@
+{
+    "description": "TS29510 Table 6.1.6.2.25-1: Definition of type UriList",
+    "javaType": "nn2.api.rest_5g.ts3gpp.UriList",
+    "type": "object",
+    "properties": {
+        "_links": {
+            "description": "Json schema based on response logic for NRF management list retrieval",
+            "javaType": "nn2.api.rest_5g.ts3gpp.Links",
+            "type": "object",
+            "properties": {
+                "item": {
+                    "type": "array",
+                    "default": null,
+                    "items": {
+                        "$ref": "link.json",
+                        "existingJavaType": "nn2.api.rest_5g.ts3gpp.Link"
+                    }
+                },
+                "self": {
+                    "$ref": "link.json",
+                    "existingJavaType": "nn2.api.rest_5g.ts3gpp.Link"
+                }
+            }
+        }
+    }
+}
